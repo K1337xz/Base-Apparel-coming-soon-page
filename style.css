@@ -3,6 +3,11 @@
 	padding: 0;
 	margin: 0;
 }
+.logo {
+	background-repeat: no-repeat;
+	padding-bottom: 200px;
+	margin-right: 250px;
+}
 body {
 	background-image: url(images/bg-pattern-desktop.svg);
 	font-size: 16px;
@@ -17,6 +22,7 @@ body {
 .container {
 	display: flex;
 	flex-direction: row;
+	position: absolute;
 }
 .leftcontent {
 	display: flex;
@@ -24,6 +30,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
 	flex: 3;
+	order: 1;
 }
 .leftcontent h1 {
 	display: flex;
@@ -65,28 +72,31 @@ body {
 	line-height: 30px;
 }
 .rightimg {
+	order: 2;
 	flex: 2;
 	background-image: url(images/hero-desktop.jpg);
 	height: 100vh;
 	width: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-right: -325px;
+	margin-right: -571px;
+}
+nav {
+	margin-top: -540px;
+	margin-left: -150px;
 }
 footer {
 	position: absolute;
 	bottom: 0;
 }
-.logo {
-	background-image: url(images/logo.svg);
-}
+
 .form input {
 	margin-left: 140px;
-	width: 400px;
+	width: 500px;
 	height: 45px;
-	margin-top: 50px;
+	margin-top: 20px;
 	border-radius: 30px;
-	padding: 30px;
+	padding: 24px;
 	outline: none;
 	border: 1px solid hsl(0, 36%, 70%);
 }
@@ -97,9 +107,171 @@ footer {
 	font-size: 20px;
 }
 .form button {
-	width: 120px;
-	height: 63px;
+	cursor: pointer;
+	padding-top: 10px;
+	padding-bottom: 38px;
+	width: 108px;
+	height: 24px;
 	border-radius: 30px;
-	margin-left: -150px;
+	margin-left: -113px;
 	border: 1px solid hsl(0, 36%, 70%);
+	background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+.from .arrow {
+	margin-top: -50px;
+}
+.form .valid {
+	transition: 0.6s cubic-bezier(0.39, 0.58, 0.57, 1);
+	background-position: 70% 50%;
+	border: 2px solid hsl(0, 100%, 48%);
+	background-image: url(images/icon-error.svg);
+	background-repeat: no-repeat;
+}
+.form p:last-child {
+	font-size: 16px;
+	margin-top: 10px;
+	margin-left: -150px;
+	text-align: right;
+	color: hsl(0, 100%, 48%);
+}
+button.validbtn {
+	padding-top: 16px;
+	padding-bottom: 34px;
+	width: 110px;
+	height: 53px;
+	border-radius: 30px;
+	border: none;
+	margin-left: -113px;
+	box-shadow: 10px 10px 49px 1px rgba(249, 107, 107, 0.69);
+	background: linear-gradient(135deg, hsl(0, 62%, 86%), hsl(7, 86%, 94%));
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-image: none;
+		background: linear-gradient(
+			Linear,
+			135deg,
+			hsl(0, 0%, 100%),
+			hsl(0, 100%, 98%)
+		);
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 100vh;
+		background-repeat: no-repeat;
+		background-size: 70% 100%;
+	}
+	nav {
+		margin-top: 167px;
+		margin-left: 0px;
+	}
+	.logo {
+		width: 30px;
+		height: 50px;
+		margin-top: -380px;
+		margin-right: 159px;
+	}
+	.leftcontent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		flex: 1;
+		order: 2;
+		margin-bottom: -145px;
+	}
+	.rightimg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		order: 1;
+		flex: 1;
+		margin-top: 204px;
+		width: 100%;
+		height: 100%;
+		background-image: url(images/hero-mobile.jpg);
+		background-size: calc(calc(100% + 5px));
+	}
+	.leftcontent h1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		color: hsl(0, 36%, 70%);
+		font-size: 60px;
+		font-family: "Josefin Sans", sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: 15px;
+		text-align: center;
+		font-size: 35px;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+	}
+	.leftcontent h2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 0px;
+		color: hsl(0, 6%, 24%);
+		font-size: 60px;
+		font-family: "Josefin Sans", sans-serif;
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 15px;
+		text-align: center;
+		font-size: 50px;
+	}
+	.leftcontent p {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: hsl(0, 36%, 70%);
+		font-size: 12px;
+		margin-left: 10px;
+		font-family: "Josefin Sans", sans-serif;
+		font-weight: 300;
+		text-align: center;
+		line-height: 20px;
+	}
+	.form input {
+		margin-left: 10px;
+		width: 290px;
+		height: 15px;
+		margin-top: 21px;
+		border-radius: 30px;
+		padding: 16px;
+		outline: none;
+		border: 1px solid hsl(0, 36%, 70%);
+	}
+	.form button {
+		cursor: pointer;
+		padding-top: 3px;
+		padding-bottom: 30px;
+		width: 63px;
+		height: 24px;
+		border-radius: 30px;
+		margin-left: -67px;
+		border: 1px solid hsl(0, 36%, 70%);
+		background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	}
+
+	footer {
+		position: absolute;
+		bottom: -25%;
+	}
+	.form p:last-child {
+		font-size: 16px;
+		margin-top: 10px;
+		margin-left: -150px;
+		text-align: right;
+		color: hsl(0, 100%, 48%);
+	}
 }
