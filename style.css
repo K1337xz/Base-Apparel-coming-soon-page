@@ -165,7 +165,7 @@ button.validbtn {
 		background-size: 70% 100%;
 	}
 	nav {
-		margin-top: 167px;
+		margin-top: 170px;
 		margin-left: 0px;
 	}
 	.logo {
@@ -181,7 +181,7 @@ button.validbtn {
 		flex-direction: column;
 		flex: 1;
 		order: 2;
-		margin-bottom: -145px;
+		margin-bottom: -100px;
 	}
 	.rightimg {
 		display: flex;
@@ -189,7 +189,7 @@ button.validbtn {
 		justify-content: center;
 		order: 1;
 		flex: 1;
-		margin-top: 204px;
+		margin-top: 205px;
 		width: 100%;
 		height: 100%;
 		background-image: url(images/hero-mobile.jpg);
