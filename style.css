@@ -23,7 +23,7 @@ body {
 	display: flex;
 }
 .content {
-	margin-top: 300px;
+	margin-top: 150px;
 	width: 60%;
 	padding: 0 2.5rem;
 	margin-left: 10rem;
@@ -107,7 +107,7 @@ form input::placeholder {
 }
 .attribution {
 	height: 20px;
-	font-size: 30px;
+	font-size: 10px;
 	text-align: center;
 }
 .attribution a {
