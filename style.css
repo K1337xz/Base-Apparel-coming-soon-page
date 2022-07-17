@@ -72,8 +72,8 @@ form button {
 	border-radius: 30px;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	padding-bottom: 24px;
-	padding-top: 33px;
+	padding-bottom: 19px;
+	padding-top: 28px;
 	border: 2px solid hsl(0, 36%, 70%);
 }
 form button:active {
