@@ -32,7 +32,7 @@ body {
 	text-transform: uppercase;
 	color: hsl(0, 36%, 70%);
 	letter-spacing: 10px;
-	font-size: 95px;
+	font-size: 60px;
 	font-weight: 300;
 }
 .content span {
@@ -41,10 +41,11 @@ body {
 }
 .content p {
 	color: hsl(0, 36%, 70%);
-	font-size: 20px;
+	font-size: 18px;
 	text-align: left;
 	line-height: 30px;
 }
+
 .bgimg {
 	width: 100vh;
 	height: 100vh;
