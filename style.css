@@ -115,7 +115,7 @@ form input::placeholder {
 	color: hsl(228, 45%, 44%);
 }
 
-/*mobile*/
+/*mobile dsg*/
 @media screen and (max-width: 700px) {
 	.logo {
 		margin-bottom: 130px;
